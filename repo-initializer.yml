@@ -1,5 +1,8 @@
 # Configuration for repo-initializer - https://github.com/hollywood/repo-initializer
 
+# Default team that should have READ access to every repo
+defaultTeam: Admin
+
 # Number of days passed before a repo is marked
 daysUntilMarked: 5
 
