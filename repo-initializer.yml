@@ -10,6 +10,9 @@ initLabel: missing-information
 markComment: >
   This issue has been automatically created because this repository does not have the appropriate team and/or topics assigned to it. Please take appropriate actions. Thank you for your contributions.
 
+markTitle: > 
+  Repository Missing Required Information
+
 # Comment to post when removing the init label.
 # unmarkComment: >
 #   Your comment here.
