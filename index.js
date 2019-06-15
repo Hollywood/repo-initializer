@@ -33,7 +33,7 @@ module.exports = async app => {
   async function markAndSweep(context) {
     //Loading config on each run to ensure up to date data
     const res = await context.github.repos.getContents({
-      owner: context.payload.organization.login,
+      owner: context.payload.repository.owner.login,
       repo: 'org-settings',
       path: '.github/repo-initializer.yml'
     })
