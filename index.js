@@ -1,7 +1,7 @@
 const createScheduler = require('probot-scheduler')
 const yaml = require('js-yaml')
 const defaults = require('./defaults.js')
-const repoInitialize = require('lib/repoInitialize.js')
+const repoInitialize = require('./lib/repoInitialize.js')
 
 module.exports = async app => {
   createScheduler(app)
