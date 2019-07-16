@@ -1,43 +1,24 @@
 const createScheduler = require('probot-scheduler')
 const yaml = require('js-yaml')
+const defaults = require('./defaults.js')
+const repoInitialize = require('lib/repoInitialize.js')
 
 module.exports = async app => {
   createScheduler(app)
 
-  // Saving for future enhancement
-  // const events = [
-  //   'added_to_repository',
-  // ]
-
-  //app.on(events, unmark)
+  Console.log(context)
 
   app.on('schedule.repository', markAndSweep)
-
-  // Keeping for future use
-  // async function unmark(context) {
-  //   if (!context.isBot) {
-  //     const init = await forRepository(context)
-
-  //     const teamList = await context.github.repos.listTeams({
-  //       owner: context.payload.repository.owner.login,
-  //       repo: context.payload.repository.name
-  //     })
-  //     const hasDefaultTeam = teamList.find(t => t.team.slug === config.defaultTeam)
-
-  //     if (hasDefaultTeam) {
-  //       init.removeIssue()
-  //     }
-  //   }
-  // }
+  app.on('repository.created', markAndSweep)
 
   async function markAndSweep(context) {
     //Loading config on each run to ensure up to date data
     const res = await context.github.repos.getContents({
       owner: context.payload.repository.owner.login,
-      repo: 'org-settings',
-      path: '.github/repo-initializer.yml'
+      repo: defaults.repo,
+      path: defaults.path
     })
-  
+
     const content = Buffer.from(res.data.content, 'base64').toString('utf8')
     const config = yaml.safeLoad(content)
     const init = await forRepository(context)

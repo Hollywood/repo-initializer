@@ -22,7 +22,7 @@
   "dependencies": {
     "acorn": "^6.1.1",
     "acorn-jsx": "^5.0.1",
-    "probot": "^9.2.0",
+    "probot": "^9.2.15",
     "probot-scheduler": "^2.0.0-beta.1"
   },
   "devDependencies": {
