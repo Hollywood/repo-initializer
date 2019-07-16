@@ -1,0 +1,131 @@
+{
+  "action": "created",
+  "installation": {
+    "id": 1165171,
+    "account": {
+      "login": "Albatoss",
+      "id": 30534725,
+      "node_id": "MDEyOk9yZ2FuaXphdGlvbjMwNTM0NzI1",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/30534725?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Albatoss",
+      "html_url": "https://github.com/Albatoss",
+      "followers_url": "https://api.github.com/users/Albatoss/followers",
+      "following_url": "https://api.github.com/users/Albatoss/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Albatoss/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Albatoss/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Albatoss/subscriptions",
+      "organizations_url": "https://api.github.com/users/Albatoss/orgs",
+      "repos_url": "https://api.github.com/users/Albatoss/repos",
+      "events_url": "https://api.github.com/users/Albatoss/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Albatoss/received_events",
+      "type": "Organization",
+      "site_admin": false
+    },
+    "repository_selection": "all",
+    "access_tokens_url": "https://api.github.com/app/installations/1165171/access_tokens",
+    "repositories_url": "https://api.github.com/installation/repositories",
+    "html_url": "https://github.com/organizations/Albatoss/settings/installations/1165171",
+    "app_id": 33129,
+    "target_id": 30534725,
+    "target_type": "Organization",
+    "permissions": {
+      "issues": "write",
+      "administration": "read",
+      "app_config": "read",
+      "metadata": "read",
+      "single_file": "read"
+    },
+    "events": [
+      "repository"
+    ],
+    "created_at": 1560802388,
+    "updated_at": 1560802388,
+    "single_file_name": "org-settings/.github/repo-initializer.yml"
+  },
+  "repositories": [
+    {
+      "id": 100652443,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDA2NTI0NDM=",
+      "name": "king-koopa",
+      "full_name": "Albatoss/king-koopa",
+      "private": false
+    },
+    {
+      "id": 100652488,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDA2NTI0ODg=",
+      "name": "hammer-bro",
+      "full_name": "Albatoss/hammer-bro",
+      "private": false
+    },
+    {
+      "id": 117900670,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTc5MDA2NzA=",
+      "name": "org-settings",
+      "full_name": "Albatoss/org-settings",
+      "private": true
+    },
+    {
+      "id": 127205589,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjcyMDU1ODk=",
+      "name": "Mario",
+      "full_name": "Albatoss/Mario",
+      "private": false
+    },
+    {
+      "id": 139878134,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzk4NzgxMzQ=",
+      "name": "hubble",
+      "full_name": "Albatoss/hubble",
+      "private": false
+    },
+    {
+      "id": 142940389,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDI5NDAzODk=",
+      "name": "merge-test",
+      "full_name": "Albatoss/merge-test",
+      "private": true
+    },
+    {
+      "id": 174611069,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzQ2MTEwNjk=",
+      "name": "Onboarding",
+      "full_name": "Albatoss/Onboarding",
+      "private": false
+    },
+    {
+      "id": 192102632,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTIxMDI2MzI=",
+      "name": "test-initialization",
+      "full_name": "Albatoss/test-initialization",
+      "private": true
+    },
+    {
+      "id": 192104556,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTIxMDQ1NTY=",
+      "name": "test-1",
+      "full_name": "Albatoss/test-1",
+      "private": true
+    }
+  ],
+  "sender": {
+    "login": "Hollywood",
+    "id": 7875028,
+    "node_id": "MDQ6VXNlcjc4NzUwMjg=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/7875028?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Hollywood",
+    "html_url": "https://github.com/Hollywood",
+    "followers_url": "https://api.github.com/users/Hollywood/followers",
+    "following_url": "https://api.github.com/users/Hollywood/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Hollywood/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Hollywood/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Hollywood/subscriptions",
+    "organizations_url": "https://api.github.com/users/Hollywood/orgs",
+    "repos_url": "https://api.github.com/users/Hollywood/repos",
+    "events_url": "https://api.github.com/users/Hollywood/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Hollywood/received_events",
+    "type": "User",
+    "site_admin": true
+  }
+}
