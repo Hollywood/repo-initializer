@@ -25,6 +25,6 @@ module.exports = async app => {
 
 
   async function forRepository(context) {
-    return new repoInitialize(context.github, config)
+    return new repoInitialize(context.payload.repository.owner.login, context.payload.repository.name, config)
   }
 }
