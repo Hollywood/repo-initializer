@@ -9,8 +9,8 @@ module.exports = async app => {
     interval: 24 * 60 * 60 * 1000 // 1 day
   })
 
-  app.on('schedule.repository', markAndSweep)
-  app.on('repository.created', markAndSweep)
+  //app.on('schedule.repository', markAndSweep)
+  //app.on('repository.created', markAndSweep)
 
   async function markAndSweep(context) {
     //Loading config on each run to ensure up to date data
