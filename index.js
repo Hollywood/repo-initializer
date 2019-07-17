@@ -6,8 +6,6 @@ const repoInitialize = require('./lib/repoInitialize.js')
 module.exports = async app => {
   createScheduler(app)
 
-  Console.log(context)
-
   app.on('schedule.repository', markAndSweep)
   app.on('repository.created', markAndSweep)
 
