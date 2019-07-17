@@ -4,7 +4,10 @@ const defaults = require('./defaults.js')
 const repoInitialize = require('./lib/repoInitialize.js')
 
 module.exports = async app => {
-  createScheduler(app)
+  createScheduler(app,  {
+    delay: !!process.env.DISABLE_DELAY, // delay is enabled on first run
+    interval: 24 * 60 * 60 * 1000 // 1 day
+  })
 
   app.on('schedule.repository', markAndSweep)
   app.on('repository.created', markAndSweep)
