@@ -16,15 +16,16 @@ module.exports = async app => {
       repo: defaults.repo,
       path: defaults.path
     })
+    const owner = context.payload.repository.owner.login
 
     const content = Buffer.from(res.data.content, 'base64').toString('utf8')
     const config = yaml.safeLoad(content)
-    const init = await forRepository(context)
+    const init = await forRepository(context, owner, config)
     await init.markAndSweep(config)
   }
 
 
-  async function forRepository(context) {
-    return new repoInitialize(context.github)
+  async function forRepository(context, owner) {
+    return new repoInitialize(context.github, owner)
   }
 }
